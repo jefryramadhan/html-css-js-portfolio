@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jefry Ramadhan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jefry Ramadhan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile-pic.png" alt="Jefry Ramadhan profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jefry Ramadhan</h1>
+            <p class="section__text__p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/New Cv.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div> 
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/jefry-ramadhan'">
+                <img src="./Assets/github.png" alt="My github Profile" class="icon" onclick="location.href='https://github.com/jefryramadhan'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./Assets/about-pic.png"
+                alt="profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                        src="./Assets/experience.png" 
+                        alt="experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ Years <br>Data Entry & Analyst</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./Assets/education.png" 
+                        alt="education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Undergraduate Degree<br>in Computerized Accounting</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Data Analyst & Entry with 1+ years of experience transforming complex data into actionable business insights. Specializing in Excel, SQL, and Tableau, I help businesses switch from intuitive guesses to data-driven decisions by automating reports and dashboards. With a Computerized Accounting background, I optimize operational efficiency through data</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./Assets/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers experience-table-wrapper">
+                <div class="table-container details-container">
+                    <table class="skills-table">
+                        <colgroup>
+                            <col class="col-category">
+                            <col class="col-skill">
+                            <col class="col-proficiency">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Skill / Tool</th>
+                                <th>Proficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3" class="category-cell">Data Analyst Tools</td>
+                                <td>Excel</td>
+                                <td>Experienced</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>Experienced</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="category-cell">Visualization Tools</td>
+                                <td>Excel Visualization</td>
+                                <td>Experienced</td>
+                            </tr>
+                            <tr>
+                                <td>Tableau</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <td>Looker/Data Studio</td>
+                                <td>Basic</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./Assets/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                        src="./Assets/project-1.png" 
+                        alt="project 1"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Market Property Data Analysis</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jefryramadhan/Data-Analysis--Melbourne-Housing-Dashboard'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://public.tableau.com/app/profile/rahmad.jefry.r/viz/MarketPropertyMelbourneDashboard/Dashboard1?publish=yes'">View Dashboard</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                        src="./Assets/project-2.png" 
+                        alt="project 2"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Supermarket Dailymart Data Analysis</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jefryramadhan/Data-Analysis-Supermarket-Dailymart-Excel-SQL-Tableau'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://public.tableau.com/app/profile/rahmad.jefry.r/viz/SupermarketDailymartDashboard/Dashboard1?publish=yes'">View Dashboard</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                        src="./Assets/project-3.png" 
+                        alt="project 3"
+                        class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project title">Senja Coffee Shop Data Analysis</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jefryramadhan/Data-Analysis-Kedai-Kopi-Senja-Dashboard-Excel'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jefryramadhan/Data-Analysis-Kedai-Kopi-Senja-Dashboard-Excel/blob/main/Dashboard1.png'">View Dashboard</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./Assets/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-form-wrapper details-container">
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-color-1 btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <hr class="footer-divider">
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Jefry Ramadhan</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
